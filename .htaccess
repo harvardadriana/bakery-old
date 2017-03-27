@@ -1,0 +1,20 @@
+# CUSTOM ERROR RESPONSE FOR HTTP RESPONSE STATUS OF 404
+ErrorDocument 404 http://www.thecodelibrary.com/arossett/bakery/404.html
+
+# SET EXPIRATION HEADERS TO CSS, JS, AND IMAGE (JPEG, GIF, PNG) 7 DAYS
+ExpiresActive On
+ExpiresByType text/css A604800
+ExpiresByType text/javascript A604800
+ExpiresByType application/javascript A604800
+ExpiresByType image/jpeg A604800
+ExpiresByType image/gif A604800
+ExpiresByType image/png A604800
+
+# SET AN OUTPUT FILTER TO COMPRESS HTML
+AddOutputFilterByType DEFLATE text/html
+
+# SET AN OUTPUT FILTER TO COMPRESS CSS
+AddOutputFilterByType DEFLATE text/css
+
+# SET AN OUTPUT FILTER TO COMPRESS JavaScript with text/javascript, application/javascript
+AddOutputFilterByType DEFLATE application/javascript

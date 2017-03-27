@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Piece of Heaven Bakery - Contact us" />
+	<title>Piece of Heaven Bakery - Contact us</title>
+	<!-- HTML5 browser support -->
+	<!--[if lt IE 9]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+  	<!-- Google fonts -->
+  	<link href="https://fonts.googleapis.com/css?family=Henny+Penny" rel="stylesheet" />
+    <!-- my reset css --> 	
+ 	<link href="css/reset.css" rel="stylesheet" />
+ 	<!-- lightbox css -->
+	<link href="css/lightbox.min.css" rel="stylesheet" />
+  	<!-- my styles -->
+ 	<link href="css/globalstyles.css" rel="stylesheet" />
+	<link href="css/contactus.css" rel="stylesheet" />
+</head>
+<body id="part4" class="contactus">
+
+	<header>
+		<div id="logo">
+			<h1>Piece of Heaven Bakery</h1>
+			<h2>Since 1965</h2>
+		</div>
+
+		<!-- NAVIGATION MENU -->
+		<nav>
+			<h3>Site navigation</h3>
+			<ul>
+				<li class="navhome"><a href="index.html" title="Home">Home</a></li>
+				<li class="navmenu"><a href="#" title="Menu">Menu</a>
+					<ul>
+						<!-- second level menu - cakes -->
+						<li><a href="sweets.html" title="Sweets">Sweets</a>
+							<ul>
+								<li><a href="cakes.html" title="Cakes">Cakes</a></li>
+								<li><a href="#" title="Cupcakes">Cupcakes</a></li>
+								<li><a href="#" title="Pies">Pies</a></li>
+								<li><a href="#" title="Cookies">Cookies</a></li>
+								<li><a href="#" title="Ice cream cakes">Ice cream cakes</a></li>
+							</ul>
+						</li>
+						<!-- second level menu - snacks -->
+						<li><a href="snacks.html" title="Snacks">Snacks</a>
+							<ul>
+								<li><a href="ciabatta.html" title="Ciabatta">Ciabatta</a></li>
+								<li><a href="tunamelt.html" title="Tuna melt">Tuna melt</a></li>
+								<li><a href="chickenwrap.html" title="Chicken wrap">Chicken wrap</a></li>
+							</ul>
+						</li>
+						<!-- second level menu - others -->
+						<li><a href="others.html" title="Others">Others</a>
+							<ul>
+								<li><a href="breads.html" title="Breads">Breads</a></li>
+								<li><a href="pizzas.html" title="Pizzas">Pizzas</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="navocasions"><a href="#" title="Special ocasions">Special Ocasions</a></li>
+				<li class="navstores"><a href="stores.html" title="Stores">Stores</a></li>
+				<li class="navcontactus"><a href="contactus.html" title="Contact us">Contact us</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<div id="form-wrapper">
+			<h1>Contact us</h1>
+			<form id="contactusform" method="post" action="">
+				<fieldset>
+					<ul>
+						<li>
+							<label for="name">Name <span class="required">&#40;Required&#41;</span></label>
+							<input type="text" name="name" id="name" maxlength="30" class="required"/>
+						</li>
+						<li>
+							<label for="email">Email <span class="required">&#40;Required&#41;</span></label>
+							<input type="email" name="email" id="email" maxlength="30" class="required email" />
+						</li>	
+						<li>
+							<label for="message">Message <span class="required">&#40;Required&#41;</span></label>
+							<textarea name="message" maxlength="250" rows="5" cols="60" id="message" placeholder="Up to 250 characters" class="required"></textarea>
+						</li>
+					</ul>
+				</fieldset>
+				<p><input type="submit" name="submit" class="submit" value="Submit" /></p>
+			</form>
+		</div>
+	</main>
+
+	<footer>
+		<p>Copyright &copy; <!-- <?php echo date("Y"); ?> --> Adriana Rossetti</p>
+	</footer>
+
+	<!-- GENERAL SCRIPTS -->
+	<!-- lightbox and jQuery -->
+	<script src="js/lightbox-plus-jquery.min.js"></script>
+	<!-- my scripts -->
+	<script src="js/scripts.js"></script>
+
+	<!-- SCRIPTS RELEVANT FOR THIS PAGE ONLY -->
+	<!-- jquery validation CDN -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
+	<script src="js/contactus.js"></script>	
+</body>
+</html>
